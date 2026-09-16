@@ -134,7 +134,7 @@ repos:
 
   - name: kursoversikt
     url: https://github.com/navikt/kursoversikt.git
-    branch: TOLK-3622
+    branch: master
     prefix: ko
     description: Package repository for kursoversikt
 
