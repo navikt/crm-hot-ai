@@ -1,0 +1,34 @@
+# repos.yaml — Workspace Manifest
+# Defines which repositories and local source folders belong to this workspace.
+# Run /pull-all-repos to clone/pull git repos and register local folders.
+#
+# Fields:
+#   name:        Directory name under repos/ (required)
+#   type:        "git" (default) or "local"
+#   url:         Git clone URL (required for type: git)
+#   branch:      Default branch to track (default: main, git only)
+#   gitignore:   For local folders only — true to gitignore, false/omitted to track (default)
+#   prefix:      Short prefix for the repo (optional, used in references)
+#   description: One-line summary (optional, auto-filled by /pull-all-repos)
+
+repos: []
+  # Example entries — uncomment and modify:
+  #
+  # Git repo (cloned, gitignored, has its own git history):
+  # - name: frontend
+  #   url: git@github.com:your-org/frontend.git
+  #   branch: main
+  #   prefix: fe
+  #   description: React frontend application
+  #
+  # - name: backend-api
+  #   url: git@github.com:your-org/backend-api.git
+  #   branch: main
+  #   prefix: be
+  #   description: REST API service
+  #
+  # Local source folder (tracked by root repo, no git):
+  # - name: shared-config
+  #   type: local
+  #   prefix: cfg
+  #   description: Shared configuration and scripts
