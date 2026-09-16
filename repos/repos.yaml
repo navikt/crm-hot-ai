@@ -125,12 +125,6 @@ repos:
     branch: master
     prefix: chl
     description: Repository for lesehjelp app in NAV
-  
-  # Local source folder (tracked by root repo, no git):
-  - name: shared-config
-    type: local
-    prefix: cfg
-    description: Shared configuration and scripts
 
   - name: kursoversikt
     url: https://github.com/navikt/kursoversikt.git
