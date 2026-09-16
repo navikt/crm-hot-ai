@@ -11,24 +11,141 @@
 #   prefix:      Short prefix for the repo (optional, used in references)
 #   description: One-line summary (optional, auto-filled by /pull-all-repos)
 
-repos: []
-  # Example entries — uncomment and modify:
-  #
-  # Git repo (cloned, gitignored, has its own git history):
-  # - name: frontend
-  #   url: git@github.com:your-org/frontend.git
-  #   branch: main
-  #   prefix: fe
-  #   description: React frontend application
-  #
-  # - name: backend-api
-  #   url: git@github.com:your-org/backend-api.git
-  #   branch: main
-  #   prefix: be
-  #   description: REST API service
-  #
+repos: 
+  - name: crm-hot-tolk
+    url: git@github.com:navikt/crm-hot-tolk.git
+    branch: master
+    prefix: cht
+    description: main repo for tolketjenesten in NAV
+  
+  - name: platform-data-model
+    url: git@github.com:navikt/platform-data-model.git
+    branch: main
+    prefix: pdm
+    description: Package repository for platform-data-model
+
+  - name: custom-metadata-dao
+    url: git@github.com:navikt/custom-metadata-dao.git
+    branch: main
+    prefix: cmd
+    description: Package repository for custom-metadata-dao
+
+  - name: custom-permission-helper
+    url: git@github.com:navikt/custom-permission-helper.git
+    branch: main
+    prefix: cph
+    description: Package repository for custom-permission-helper
+
+  - name: feature-toggle
+    url: git@github.com:navikt/feature-toggle.git
+    branch: main
+    prefix: ft
+    description: Package repository for feature-toggle
+
+  - name: crm-platform-base
+    url: git@github.com:navikt/crm-platform-base.git
+    branch: main
+    prefix: cpb
+    description: Package repository for crm-platform-base
+
+  - name: crm-thread-view
+    url: git@github.com:navikt/crm-thread-view.git
+    branch: main
+    prefix: ctv
+    description: Package repository for crm-thread-view
+
+  - name: crm-journal-utilities
+    url: git@github.com:navikt/crm-journal-utilities.git
+    branch: main
+    prefix: cju
+    description: Package repository for crm-journal-utilities
+
+  - name: crm-shared-flowComponents
+    url: git@github.com:navikt/crm-shared-flowComponents.git
+    branch: main
+    prefix: csf
+    description: Package repository for crm-shared-flowComponents
+
+  - name: crm-henvendelse-base
+    url: git@github.com:navikt/crm-henvendelse-base.git
+    branch: main
+    prefix: chb
+    description: Package repository for crm-henvendelse-base
+
+  - name: crm-platform-integration
+    url: git@github.com:navikt/crm-platform-integration.git
+    branch: main
+    prefix: cpi
+    description: Package repository for crm-platform-integration
+
+  - name: crm-shared-user-notification
+    url: git@github.com:navikt/crm-shared-user-notification.git
+    branch: main
+    prefix: csn
+    description: Package repository for crm-shared-user-notification
+
+  - name: crm-platform-oppgave
+    url: git@github.com:navikt/crm-platform-oppgave.git
+    branch: main
+    prefix: cpo
+    description: Package repository for crm-platform-oppgave
+
+  - name: crm-platform-access-control
+    url: git@github.com:navikt/crm-platform-access-control.git
+    branch: main
+    prefix: cpa
+    description: Package repository for crm-platform-access-control
+
+  - name: crm-community-base
+    url: git@github.com:navikt/crm-community-base.git
+    branch: main
+    prefix: ccb
+    description: Package repository for crm-community-base
+
+  - name: crm-platform-reporting
+    url: git@github.com:navikt/crm-platform-reporting.git
+    branch: main
+    prefix: cpr
+    description: Package repository for crm-platform-reporting
+
+  - name: crm-henvendelse
+    url: git@github.com:navikt/crm-henvendelse.git
+    branch: main
+    prefix: ch
+    description: Package repository for crm-henvendelse
+
+  - name: crm-hot-felles
+    url: git@github.com:navikt/crm-hot-felles.git
+    branch: master
+    prefix: chf
+    description: Package repository for crm-hot-fel
+    
+  - name: crm-hot-lesehjelp
+    url: git@github.com:navikt/crm-hot-lesehjelp.git
+    branch: master
+    prefix: chl
+    description: Repository for lesehjelp app in NAV
+  
   # Local source folder (tracked by root repo, no git):
-  # - name: shared-config
-  #   type: local
-  #   prefix: cfg
-  #   description: Shared configuration and scripts
+  - name: shared-config
+    type: local
+    prefix: cfg
+    description: Shared configuration and scripts
+
+  - name: kursoversikt
+    url: https://github.com/navikt/kursoversikt.git
+    branch: TOLK-3622
+    prefix: ko
+    description: Package repository for kursoversikt
+
+  - name: kafka-hot-crm
+    url: https://github.com/navikt/kafka-hot-crm.git
+    branch: main
+    prefix: khc
+    description: Package repository for kafka-hot-crm
+
+  - name: sf-pubsub
+    url: https://github.com/navikt/sf-pubsub.git
+    branch: main
+    prefix: sps
+    description: Package repository for sf-pubsub
